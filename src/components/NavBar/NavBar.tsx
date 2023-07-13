@@ -2,15 +2,14 @@ import { Link, animateScroll as scroll } from "react-scroll"
 import { FaHome } from "react-icons/fa"
 import "../../index.css"
 
-type Props = {}
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <div className="flex items-center justify-between p-4 bg-black text-white fixed top-0 right-0 left-0">
+    <div className="flex items-center justify-between p-4 bg-black text-white fixed top-0 right-0 left-0 z-20">
       <div>
         <button className="flex items-center text-2xl  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 p-4" onClick={scrollToTop}>
           <FaHome className="mr-2" />
