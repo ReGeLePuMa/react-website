@@ -9,8 +9,8 @@ import "../../index.css"
 
 function Home() {
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-no-repeat overflow-hidden">
-    <video className="w-screen h-screen object-cover fixed top-0 left-0 -z-1" autoPlay loop muted>
+    <div className="h-screen w-screen flex items-center justify-center bg-no-repeat">
+    <video className="w-screen h-screen object-cover absolute top-0 left-0 -z-1" autoPlay loop muted>
       <source src={Video} type="video/mp4" />
     </video>
     <div className="flex flex-col items-center text-white z-10">
