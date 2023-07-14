@@ -4,10 +4,10 @@ import { BiMedal } from "react-icons/bi"
 
 function Awards() {
     return (
-        <div id="awards-section" className="flex w-screen h-96 bg-white">
-            <div className="w-1/2 h-96 flex flex-col items-center flex-1">
-                <h1 className="text-6xl font-bold text-black mx-auto my-auto">Awards</h1>
-                <AiOutlineTrophy className="w-4/5 h-4/5 mx-auto my-auto" />
+        <div id="awards-section" className="flex h-screen w-screen  bg-white">
+            <div className="w-1/2 flex flex-col items-center justify-center flex-1">
+                <h1 className="text-6xl font-bold text-black">Awards</h1>
+                <AiOutlineTrophy className="w-96 h-96" />
             </div>
             <div className="w-1/2 flex flex-col items-center flex-1">
                 <div className="flex border-2 border-black w-4/5 h-full rounded-lg my-4 cursor-pointer items-center p-4 bg-light-gray">

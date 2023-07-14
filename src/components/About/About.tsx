@@ -4,11 +4,11 @@ import { Link } from 'react-scroll'
 
 function About() {
     return (
-        <div id="about-me" className="w-screen h-screen  flex bg-white z-20 ">
+        <div id="about-me" className="w-screen h-screen  flex bg-white z-20  ">
             <div className="w-1/2 flex justify-center ">
-                <img src={Photo} />
+                <img src={Photo} className="w-auto h-auto" alt="Your Photo" />
             </div>
-            <div className="w-1/2 flex flex-col items-center ">
+            <div className="w-1/2 flex flex-col items-center my-auto ">
                 <h1 className="text-5xl text-center font-bold p-4">About me</h1>
                 <div className="max-w-screen-md p-8">
                     <p className="text-xl text-left">

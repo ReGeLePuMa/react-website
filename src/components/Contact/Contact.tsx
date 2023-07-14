@@ -42,12 +42,12 @@ function Contact() {
                 showAlert("Email sent successfully", 'bg-green-500');
               })
               .catch(() => {
-                showAlert('Failed to send email', 'bg-red-500');
+                showAlert('Failed to send the email', 'bg-red-500');
               });
         e.currentTarget.reset();    
     };
     return (
-        <div id="contact-section" className="w-screen flex flex-col  bg-white">
+        <div id="contact-section" className="w-screen  flex flex-col items-center justify-center  bg-white">
             <div className="w-screen flex flex-col items-center justify-center text-center my-8">
                 <h1 className="text-6xl  font-bold text-black ">Contact me</h1>
             </div>

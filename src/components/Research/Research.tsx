@@ -7,7 +7,7 @@ function Research() {
         window.open(url, '_blank');
       };
     return (
-        <div id="research-section" className="w-screen h-1/2 bg-black flex flex-col items-center justify-center">
+        <div id="research-section" className="w-screen h-screen bg-black flex flex-col items-center justify-center">
             <div className="flex items-center justify-center w-4/5  my-4">
                 <h1 className="text-6xl text-white m-5 ">Research</h1>
             </div>
@@ -22,7 +22,7 @@ function Research() {
                     <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10052824/bin/medicina-59-00622-g005.gif" alt="Tudose" className="mx-auto" style={{ width: '150px', height: '150px' }} />
                     </div>
             </div>
-            <div className="flex  bg-white w-4/5  rounded-lg my-4 cursor-pointer"
+            <div className="flex  bg-white w-4/5  rounded-lg cursor-pointer mx-4 my-8"
             onClick={() => handleDivClick('https://pubmed.ncbi.nlm.nih.gov/37370931/')}>
                 <div className="flex flex-col w-2/4">
                     <h1 className="text-2xl font-bold text-black ml-5 p-2">The Vertebral Artery: A Systematic Review and a Meta-Analysis of the Current Literature</h1>
