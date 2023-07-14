@@ -6,6 +6,7 @@ import Teaching from './components/Teaching/Teaching'
 import Research from './components/Research/Research'
 import Awards from './components/Awards/Awards'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Awards/>
       <Teaching/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
