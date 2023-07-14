@@ -37,7 +37,7 @@ function Home() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="nav-link  bg-black border-white border-2 rounded-lg hover:scale-105 transition-all duration-300 text-2xl mr-10 p-4"
+            className="nav-link cursor-pointer  bg-black border-white border-2 rounded-lg hover:scale-105 transition-all duration-300 text-2xl mr-10 p-4"
           >
             About me
           </Link>
@@ -48,7 +48,7 @@ function Home() {
             smooth={true}
             offset={-70}
             duration={500}
-            className="nav-link bg-white text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4 mr-10 ml-5"
+            className="nav-link cursor-pointer bg-white text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4 mr-10 ml-5"
           >
             Contact
           </Link>

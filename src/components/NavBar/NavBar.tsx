@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="w-screen flex items-center justify-between p-4 bg-black text-white fixed top-0 z-20 overflow-x-hidden">
       <div>
-        <button className="flex items-center text-2xl  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 p-4" onClick={scrollToTop}>
+        <button className="flex items-center text-2xl cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 p-4" onClick={scrollToTop}>
           <FaHome className="mr-2" />
           Home
         </button>
@@ -22,9 +22,9 @@ const Navbar = () => {
           to="research-section"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-50}
           duration={500}
-          className="nav-link  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
+          className="nav-link cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
         >
           Research
         </Link>
@@ -33,9 +33,9 @@ const Navbar = () => {
           to="awards-section"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-50}
           duration={500}
-          className="nav-link  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
+          className="nav-link cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
         >
           Awards
         </Link>
@@ -44,9 +44,9 @@ const Navbar = () => {
           to="teaching-section"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-50}
           duration={500}
-          className="nav-link  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
+          className="nav-link cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
         >
           Teaching
         </Link>
@@ -55,9 +55,9 @@ const Navbar = () => {
           to="contact-section"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-50}
           duration={500}
-          className="nav-link  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
+          className="nav-link cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-2xl p-4"
         >
           Contact
         </Link>
