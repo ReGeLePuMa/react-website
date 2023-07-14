@@ -1,21 +1,24 @@
 import './index.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/NavBar/NavBar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
-import Gallery from './components/Gallery/Gallery'
+import Teaching from './components/Teaching/Teaching'
 import Research from './components/Research/Research'
 import Awards from './components/Awards/Awards'
+import Contact from './components/Contact/Contact'
 
 function App() {
   
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<><Navbar /><Home/><About/><Research/><Awards/></>} />
-        <Route path="/gallery" element={<><Navbar /><Gallery/></>} />
-      </Routes>
-    </Router>
+    <>
+     <Navbar />
+      <Home/>
+      <About/>
+      <Research/>
+      <Awards/>
+      <Teaching/>
+      <Contact/>
+    </>
   )
 }
 
