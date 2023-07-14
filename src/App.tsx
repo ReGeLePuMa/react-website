@@ -7,20 +7,21 @@ import Research from './components/Research/Research'
 import Awards from './components/Awards/Awards'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
-  
+
   return (
-    <>
-     <Navbar />
-      <Home/>
-      <About/>
-      <Research/>
-      <Awards/>
-      <Teaching/>
-      <Contact/>
-      <Footer/>
-    </>
+    <Router>
+      <Navbar />
+      <Home />
+      <About />
+      <Research />
+      <Awards />
+      <Teaching />
+      <Contact />
+      <Footer />
+    </Router>
   )
 }
 
