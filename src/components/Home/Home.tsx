@@ -9,13 +9,13 @@ import "../../index.css"
 
 function Home() {
   return (
-    <div className="h-screen w-screen overflow-x-auto relative flex items-center justify-center">
+    <div className="h-screen w-screen overflow-x-auto relative flex items-center justify-center mt-4">
         <video className="w-full h-screen object-cover absolute top-0 left-0" autoPlay loop muted>
           <source src={Video} type="video/mp4" />
         </video>
 
       <div className="flex flex-col items-center text-white z-10">
-        <img src={Photo} alt="Tudose" className="w-3/4 h-3/4 rounded-full mx-auto mt-10" />
+        <img src={Photo} alt="Tudose" className="w-2/3 h-2/3 rounded-full mx-auto mt-10" />
         <h1 className="text-5xl font-bold p-2">Dr. Răzvan Tudose</h1>
         <div className="flex items-center mr-4 p-2">
           <FaTooth className="text-2xl" />

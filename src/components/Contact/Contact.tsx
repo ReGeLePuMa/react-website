@@ -2,6 +2,7 @@ import "../../index.css"
 import { useRef } from "react"
 import emailjs from '@emailjs/browser';
 
+
 function Contact() {
 
     const form = useRef<HTMLFormElement>(null);
@@ -20,7 +21,6 @@ function Contact() {
         'uppercase',
         'rounded',
         'shadow-lg', 
-        'bg-white',
         'text-gray-800',
         'z-50');
     
@@ -37,7 +37,7 @@ function Contact() {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_o3h5ayg', 'template_1cr7dsb', e.currentTarget, 'dtdovAj68xmtZqIhf')
+            .sendForm('service_g8ankhs', 'template_kfznsgn', e.currentTarget, 'dtdovAj68xmtZqIhf')
             .then(() => {
                 showAlert("Email sent successfully", 'bg-green-500');
               })
@@ -47,7 +47,7 @@ function Contact() {
         e.currentTarget.reset();    
     };
     return (
-        <div id="contact-section" className="w-screen  flex flex-col items-center justify-center  bg-white">
+        <div id="contact-section" className="w-screen flex flex-col items-center justify-center  bg-white">
             <div className="w-screen flex flex-col items-center justify-center text-center my-8">
                 <h1 className="text-6xl  font-bold text-black ">Contact me</h1>
             </div>
