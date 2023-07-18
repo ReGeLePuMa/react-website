@@ -18,8 +18,9 @@ function Research() {
                     <p className="text-xl text-black italic ml-5 p-2">Rusu MC, Tudose RC, Vrapciu AD, Toader C, Popescu ŞA </p>
                     <p className="text-lg text-black italic ml-5 p-2">Medicina (Kaunas). 2023 Mar 21;59(3):622. doi: 10.3390/medicina59030622. PMID: 36984623; PMCID: PMC10052824</p>
                 </div>
-                <div className="flex w-2/4 flex-col items-center justify-center ">
-                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10052824/bin/medicina-59-00622-g005.gif" alt="Tudose" className="mx-auto border-2 border-black" style={{ width: '150px', height: '150px' }} />
+                <div className="flex w-2/4 items-center justify-center ">
+                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10052824/bin/medicina-59-00622-g020.gif" alt="Tudose" className="mx-5 border-2 border-black" style={{ width: '150px', height: '150px' }} />
+                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10052824/bin/medicina-59-00622-g021.gif" alt="Tudose" className="mx-5 border-2 border-black" style={{ width: '150px', height: '150px' }} />
                     </div>
             </div>
             <div className="flex  bg-white w-4/5  rounded-lg cursor-pointer mx-4 my-8"
@@ -29,8 +30,9 @@ function Research() {
                     <p className="text-xl text-black italic ml-5 p-2">Tudose RC, Rusu MC, Hostiuc S </p>
                     <p className="text-lg text-black italic ml-5 p-2">Diagnostics (Basel). 2023 Jun 12;13(12):2036. doi: 10.3390/diagnostics13122036. PMID: 37370931; PMCID: PMC10296927</p>
                 </div>
-                <div className="flex w-2/4 flex-col items-center justify-center ">
-                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10296927/bin/diagnostics-13-02036-g001.gif" alt="Tudose" className="mx-auto border-2 border-black" style={{ width: '150px', height: '150px' }} />
+                <div className="flex w-2/4 items-center justify-center ">
+                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10296927/bin/diagnostics-13-02036-g001.gif" alt="Tudose" className="mx-5 border-2 border-black" style={{ width: '150px', height: '150px' }} />
+                    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10296927/bin/diagnostics-13-02036-g031.gif" alt="Tudose" className="mx-5 border-2 border-black" style={{ width: '150px', height: '150px' }} />
                     </div>
             </div>
         </div>

@@ -65,7 +65,7 @@ function Teaching() {
               src={Image2}
               alt="Slide 2"
               className=" w-full h-[50vh]" />
-            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterior and anterolateral views <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterolateral view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)
             </p>
@@ -86,7 +86,7 @@ function Teaching() {
               alt="Slide 4"
               className=" w-full h-[50vh]"
             />
-            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterior and anterolateral views <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterolateral view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)</p>
           </div>
@@ -111,7 +111,7 @@ function Teaching() {
               alt="Slide 6"
               className=" w-full h-[50vh]"
             />
-            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterior and anterolateral views <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-normal" style={{ whiteSpace: 'pre-line', lineHeight: '1' }}>3D rendering of the skull, anterior view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)</p>
           </div>
