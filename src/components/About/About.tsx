@@ -3,11 +3,11 @@ import Photo from "../../assets/umfcd.png"
 
 function About() {
     return (
-        <div id="about-me" className="w-screen h-screen  flex bg-white z-20  ">
-            <div className="w-1/2 flex justify-center ">
-                <img src={Photo} className="w-auto h-auto" alt="Your Photo" />
+        <div id="about-me" className="w-screen h-screen flex bg-white z-20">
+            <div className="w-1/2 h-screen flex items-center justify-center">
+                <img src={Photo} className="object-contain w-full h-full " alt="Your Photo" />
             </div>
-            <div className="w-1/2 flex flex-col items-center my-auto ">
+            <div className="w-1/2 flex flex-col items-center justify-center my-auto">
                 <h1 className="text-5xl text-center font-bold p-4">About me</h1>
                 <div className="max-w-screen-md p-8">
                     <p className="text-2xl text-left">
@@ -17,7 +17,7 @@ function About() {
                         Continuously seeking new avenues for growth, I am eager to delve into the complexities of oral and maxillofacial anatomy and contribute to cutting-edge research in the field of medicine.“
                     </p>
                 </div>
-            
+
             </div>
         </div>
     )

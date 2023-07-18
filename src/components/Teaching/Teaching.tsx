@@ -35,7 +35,6 @@ function Teaching() {
           showIndicators={false}
           stopOnHover={true}
           axis="horizontal"
-          className="mx-auto my-auto w-full h-full"
           selectedItem={currentSlide}
           onChange={setCurrentSlide}
         >
