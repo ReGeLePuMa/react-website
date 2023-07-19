@@ -6,8 +6,8 @@ function Awards() {
     return (
         <div id="awards-section" className="flex h-screen w-screen  bg-white">
             <div className="w-1/2 flex flex-col items-center justify-center flex-1">
-                <h1 className="text-6xl font-bold text-black">Awards</h1>
-                <AiOutlineTrophy className="w-96 h-96" />
+                <h1 className="text-4xl font-bold text-black">Awards</h1>
+                <AiOutlineTrophy className="w-80 h-80" />
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center">
                 <div className="flex border-2 border-black w-4/5 rounded-lg my-4 items-center p-4 bg-light-gray">
