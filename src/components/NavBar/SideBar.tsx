@@ -3,7 +3,7 @@ import "../../index.css"
 
 function SideBar() {
   return (
-    <div className="fixed flex flex-col z-50 bg-black text-white top-20 right-0 rounded-lg">
+    <div className="fixed flex flex-col z-40 bg-black text-white top-20 right-0 rounded-lg">
        <div className="flex flex-col items-center justify-center">
     <Link
       activeClass="active"

@@ -15,13 +15,12 @@ function Contact() {
         'left-0',
         'right-0',
         'p-4',
-        'text-white',
         'text-center',
         'font-bold',
         'uppercase',
         'rounded',
         'shadow-lg', 
-        'text-gray-800',
+        'text-black',
         'z-50');
     
         alertDiv.classList.add(bgColor);
@@ -64,7 +63,7 @@ function Contact() {
                     <div className="mb-6">
                         <label htmlFor="email" className="block text-md font-bold text-black mb-2">Email:</label>
                         <input type="email" name="user_email" className="w-full px-4 py-2 border border-gray-300 rounded-md"
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                         required
                         title="Please enter a valid email address." />
                     </div>
