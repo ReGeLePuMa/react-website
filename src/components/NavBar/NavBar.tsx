@@ -1,9 +1,20 @@
 import { Link, animateScroll as scroll } from "react-scroll"
+import { useState } from "react"
 import { FaHome } from "react-icons/fa"
+import { GiHamburgerMenu } from "react-icons/gi"
+import Sidebar from "./SideBar"
 import "../../index.css"
 
 
 const Navbar = () => {
+
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -16,7 +27,7 @@ const Navbar = () => {
           Home
         </button>
       </div>
-      <div className="flex items-center justify-center flex-1">
+      <div className="hidden sm:flex items-center justify-center flex-1">
         <Link
           activeClass="active"
           to="research-section"
@@ -61,6 +72,12 @@ const Navbar = () => {
         >
           Contact
         </Link>
+      </div>
+      <div className="sm:hidden relative ">
+        <button className="text-white text-xl cursor-pointer" onClick={toggleDropdown}>
+          <GiHamburgerMenu/>
+        </button>
+        {showDropdown && <Sidebar />}
       </div>
     </div>
   );
