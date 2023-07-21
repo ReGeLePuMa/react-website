@@ -9,6 +9,7 @@ import Image3 from "../../assets/carousel/picture3.jpg"
 import Image4 from "../../assets/carousel/picture4.jpg"
 import Image5 from "../../assets/carousel/picture5.jpg"
 import Image6 from "../../assets/carousel/picture6.jpg"
+import PosterImage from "../../assets/carousel/poster.jpg"
 
 
 
@@ -23,7 +24,7 @@ function Teaching() {
       <div className="p-12 mb-12">
         <h1 className="text-4xl text-white font-bold my-auto mx-auto">Teaching</h1>
       </div>
-      <div className="flex-start mx-auto">
+      <div className="w-full h-auto">
         <Carousel
           showStatus={false}
           infiniteLoop={true}
@@ -39,10 +40,17 @@ function Teaching() {
           onChange={setCurrentSlide}
         >
           <div className="w-1/2 flex flex-col items-center justify-center mx-auto">
-            <video className="w-[30vh] h-[30vh]" muted autoPlay loop onEnded={handleVideoEnded}>
+            <video className="object-contain
+            min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+            min-[700px]:h-150px min-[700px]:w-150px  
+            min-[300px]:h-auto min-[300px]:w-auto" muted autoPlay loop playsInline poster={PosterImage} onEnded={handleVideoEnded}>
               <source src={Film} type="video/mp4" />
             </video>
-            <p className="h-auto w-auto text-md text-white text-center mt-4 italic leading-tight whitespace-pre-line">
+            <p className="h-auto w-auto text-white text-center mt-4 italic leading-tight whitespace-pre-line
+            min-[1500px]:text-lg
+            min-[900px]:text-md
+            min-[700px]:text-sm
+            min-[300px]:text-xs">
               A case of significant clinical importance in dentistry is presented. Bilateral, erupted 3rd molars, lightly bucco-angulated, tangential at the maxillary sinus.<br/><br/>
               Left: The palatine root of the 3rd molar presents a periapical granuloma, diameter - 1.58 mm. The excision of such formation situated in the proximity of the greater palatine foramen (distance - 2.24 mm) may result in the lesion of the greater palatine bundles, coursing through the foramen.<br /><br />
               Note the high bone density of the medial wall of the greater palatine canal/lateral wall of the nasal fossa.
@@ -53,8 +61,15 @@ function Teaching() {
             <img
               src={Image1}
               alt="Slide 1"
-              className=" w-[30vh] h-[30vh]" />
-            <p className="h-auto w-auto text-md text-white text-center mt-4 italic leading-tight whitespace-pre-line">CBCT posterior-lateral view of the head and neck region, consisting of two 2D planes (axial and sagittal)
+              className="object-contain
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto" />
+            <p className="h-auto w-auto text-white text-center mt-4 italic leading-tight whitespace-pre-line
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs">CBCT posterior-lateral view of the head and neck region, consisting of two 2D planes (axial and sagittal)
               and a cropped-volume 3D model representing the mandible (red) and the rest of the skull (blue). <br/><br/>
               Bilateral greater palatine fiber bundles can be observed in the anterior part of the scheme (yellow). The greater palatine canal
               and its opening in the oral cavity can be easily spotted via the greater palatine foramen on the sagittal plane</p>
@@ -63,8 +78,15 @@ function Teaching() {
             <img
               src={Image2}
               alt="Slide 2"
-              className=" w-[30vh] h-[30vh]" />
-            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight">3D rendering of the skull, anterolateral view <br/><br/>
+              className="object-contain h-auto w-auto
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto" />
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs">3D rendering of the skull, anterolateral view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)
             </p>
@@ -73,9 +95,16 @@ function Teaching() {
             <img
               src={Image3}
               alt="Slide 3"
-              className=" w-[30vh] h-[30vh]"
+              className="object-contain
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto"
             />
-            <p className="h-auto w-auto text-md text-white text-center mt-8 italic leading-tight"> 3D-2D-2D-2D rendering illustrating the A-L view of the head. <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs"> 3D-2D-2D-2D rendering illustrating the A-L view of the head. <br/><br/>
             An X-Ray filter was used for its high transparency. The greater palatine canal can be visualized, as well as the pterygopalatine fossa,
             and its communication with the orbit through the inferior orbital fissure (yellow). Other anatomical structures may be as well distinguished.</p>
           </div>
@@ -83,9 +112,16 @@ function Teaching() {
             <img
               src={Image4}
               alt="Slide 4"
-              className=" w-[30vh] h-[30vh]"
+              className="object-contain
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto"
             />
-            <p className="h-auto w-auto text-md text-white text-center mt-8 italic leading-tight">3D rendering of the skull, anterolateral view <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs">3D rendering of the skull, anterolateral view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)</p>
           </div>
@@ -93,9 +129,16 @@ function Teaching() {
             <img
               src={Image5}
               alt="Slide 5"
-              className=" w-[30vh] h-[30vh]"
+              className="object-contain
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto"
             />
-            <p className="h-auto w-auto text-md text-white text-center mt-8 italic leading-tight">3D-2D-2D figure
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs">3D-2D-2D figure
               Anterior-Lateral-Inferior view of the head <br></br>
               Illustration of the greater palatine canals with the greater palatine bundle and their extension in the oral cavity through the palatine grooves.<br></br>
               Yellow: Right greater palatine bundle <br></br>
@@ -108,9 +151,16 @@ function Teaching() {
             <img
               src={Image6}
               alt="Slide 6"
-              className=" w-[30vh] h-[30vh]"
+              className="object-contain 
+              min-[900px]:h-[30vh] min-[900px]:w-[30vw]
+              min-[700px]:h-150px min-[700px]:w-150px  
+              min-[300px]:h-auto min-[300px]:w-auto"
             />
-            <p className="h-auto w-auto text-md text-white text-center mt-8 italic leading-tight">3D rendering of the skull, anterior view <br/><br/>
+            <p className="h-auto w-auto text-white text-center mt-8 italic leading-tight
+             min-[1500px]:text-lg
+             min-[900px]:text-md
+             min-[700px]:text-sm
+             min-[300px]:text-xs">3D rendering of the skull, anterior view <br/><br/>
               Infraorbital neurovascular bundles can be observed, exiting through the infraorbital foramen <br/><br/>
               Anatomical areas of interest for the zygomatic implant have been suggestively stained bilaterally (red/blue)</p>
           </div>
