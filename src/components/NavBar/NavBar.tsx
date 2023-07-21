@@ -9,6 +9,7 @@ import "../../index.css"
 const Navbar = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isTapped, setIsTapped] = useState(true);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -17,12 +18,14 @@ const Navbar = () => {
 
   const scrollToTop = () => {
     scroll.scrollToTop();
+    setIsTapped(false);
+    setTimeout(() => setIsTapped(true), 1000);
   };
 
   return (
     <div className="w-screen flex items-center justify-between p-4 bg-black text-white fixed top-0 z-20 overflow-x-hidden my-auto">
       <div>
-        <button className="flex items-center text-xl cursor-pointer  hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 p-4" onClick={scrollToTop}>
+        <button className={`flex items-center bg-${isTapped ? 'black' : 'white'} text-${isTapped ? 'white' : 'black'} text-xl cursor-pointer  min-[700px]:hover:bg-white min-[700px]:hover:text-black rounded-lg min-[700px]:hover:scale-105 transition-all duration-300 p-4`} onClick={scrollToTop}>
           <FaHome className="mr-2" />
           Home
         </button>
@@ -77,7 +80,7 @@ const Navbar = () => {
         <button className="text-white text-xl cursor-pointer" onClick={toggleDropdown}>
           <GiHamburgerMenu/>
         </button>
-        {showDropdown && <Sidebar />}
+        {showDropdown && <Sidebar toggleDropdown={toggleDropdown}/>}
       </div>
     </div>
   );

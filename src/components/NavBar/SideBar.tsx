@@ -1,7 +1,8 @@
 import { Link } from "react-scroll"
 import "../../index.css"
 
-function SideBar() {
+
+function SideBar(props: {toggleDropdown: () => void}) {
   return (
     <div className="fixed flex flex-col z-40 bg-black text-white top-20 right-0 rounded-lg">
        <div className="flex flex-col items-center justify-center">
@@ -13,6 +14,7 @@ function SideBar() {
       offset={-50}
       duration={500}
       className="nav-link cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 text-md p-4"
+      onClick={props.toggleDropdown}
     >
       Research
     </Link>
@@ -24,6 +26,7 @@ function SideBar() {
       offset={-50}
       duration={500}
       className="nav-link cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 text-md p-4"
+      onClick={props.toggleDropdown}
     >
       Awards
     </Link>
@@ -35,6 +38,7 @@ function SideBar() {
       offset={-50}
       duration={500}
       className="nav-link cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 text-md p-4"
+      onClick={props.toggleDropdown}
     >
       Teaching
     </Link>
@@ -46,6 +50,7 @@ function SideBar() {
       offset={-50}
       duration={500}
       className="nav-link cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 text-md p-4"
+      onClick={props.toggleDropdown}
     >
       Contact
     </Link>

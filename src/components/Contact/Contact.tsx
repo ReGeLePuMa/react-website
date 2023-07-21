@@ -75,7 +75,7 @@ function Contact() {
                         maxLength={500}
                         title="Please enter a message between 1 and 500 characters."></textarea>
                     </div>
-                    <div className="flex justify-end">
+                    <div className="flex min-[700px]:justify-end min-[300px]:justify-center">
                         <button type="submit" value="Send" className="bg-black text-white px-6 py-2 rounded-md hover:scale-105 transition-all duration-300">Submit</button>
                     </div>
                 </form>
