@@ -38,11 +38,11 @@ function Home() {
           <HiAcademicCap className=" 
             min-[1500px]:text-3xl
             min-[700px]:text-2xl
-            min-[300px]:text-xl" />
+            min-[300px]:text-3xl" />
           <span className="ml-2 text-center
           min-[1500px]:text-3xl
           min-[700px]:text-2xl
-          min-[300px]:text-xl">“Carol Davila” University of Medicine and Pharmacy</span>
+          min-[300px]:text-lg">“Carol Davila” University of Medicine and Pharmacy</span>
         </div>
         <div className="flex items-center justify-center p-2">
           <BsFillPinFill className=" 

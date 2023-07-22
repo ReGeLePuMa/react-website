@@ -5,7 +5,7 @@ import { BiMedal } from "react-icons/bi"
 function Awards() {
     return (
         <div id="awards-section" className="flex min-[700px]:flex-row min-[300px]:flex-col h-screen w-screen  bg-white">
-            <div className="min-[700px]:w-1/2 min-[300px]:w-full  flex flex-col items-center justify-center flex-1">
+            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto  flex flex-col items-center justify-center flex-1">
                 <h1 className="font-bold text-black text-4xl">Awards</h1>
                 <AiOutlineTrophy className="w-1/2 h-1/2
                 min-[900px]:w-80 min-[900px]:h-80
@@ -13,7 +13,7 @@ function Awards() {
                 min-[300px]:w-60 min-[300px]:w-60
                 min-[150px]:w-60 min-[150px]:w-60" />
             </div>
-            <div className="min-[700px]:w-1/2 min-[300px]:w-full flex flex-col items-center justify-center">
+            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex flex-col items-center justify-center">
                 <div className="flex flex-row border-2 border-black w-4/5 rounded-lg my-4 items-center p-4 bg-light-gray">
                 <BiMedal className="w-16 h-16 mr-4"/>
                 <div>
