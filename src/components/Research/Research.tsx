@@ -26,7 +26,7 @@ function Research() {
                         <p className="text-black italic ml-5 p-2
                         min-[1280px]:text-md
                         min-[900px]:text-sm
-                        min-[300px]:text-sm">Medicina (Kaunas). 2023 Mar 21;59(3):622. doi: 10.3390/medicina59030622. PMID: 36984623; PMCID: PMC10052824</p>
+                        min-[300px]:text-xs">Medicina (Kaunas). 2023 Mar 21;59(3):622. doi: 10.3390/medicina59030622. PMID: 36984623; PMCID: PMC10052824</p>
                     </div>
                     <div className="flex min-[700px]:w-2/4 max-[699px]:hidden items-center justify-center ">
                         <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10052824/bin/medicina-59-00622-g020.gif" alt="Tudose" className="mx-5 border-2 border-black 
@@ -55,7 +55,7 @@ function Research() {
                         <p className="text-sm text-black italic ml-5 p-2
                          min-[1280px]:text-md
                          min-[900px]:text-sm
-                         min-[300px]:text-sm">Diagnostics (Basel). 2023 Jun 12;13(12):2036. doi: 10.3390/diagnostics13122036. PMID: 37370931; PMCID: PMC10296927</p>
+                         min-[300px]:text-xs">Diagnostics (Basel). 2023 Jun 12;13(12):2036. doi: 10.3390/diagnostics13122036. PMID: 37370931; PMCID: PMC10296927</p>
                     </div>
                     <div className="flex min-[700px]:w-2/4 max-[699px]:hidden items-center justify-center ">
                         <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10296927/bin/diagnostics-13-02036-g001.gif" alt="Tudose" className="mx-5 border-2 border-black

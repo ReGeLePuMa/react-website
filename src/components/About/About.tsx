@@ -9,18 +9,18 @@ function About() {
             </div>
             <div className="min-[700px]:w-1/2 min-[300px]:w-full flex flex-col items-center justify-center my-auto">
                 <h1 className="text-center font-bold p-4 text-4xl">About me</h1>
-                <div className="max-w-screen-md p-8">
-                    <p className="text-left
+                <div className="w-full h-auto p-8">
+                    <p className="text-center
                     min-[1500px]:text-3xl
                     min-[1280px]:text-2xl
                     min-[900px]:text-xl
                     min-[800px]:text-lg
                     min-[600px]:text-md
                     min-[300px]:text-sm">
-                        “I am Tudose Razvan, a committed and driven dentistry student at the Faculty of Dentistry, “Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania.
+                        I am Răzvan Tudose, a committed and driven dentistry student at the Faculty of Dentistry, “Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania.
                         With a profound dedication to unravelling anatomy and contributing to medical research, I strive for excellence in the field of dentistry.
                         Proficient in english, I possess the adaptability to thrive in diverse clinical environments, while showcasing exceptional teamwork and interpersonal skills.
-                        Continuously seeking new avenues for growth, I am eager to delve into the complexities of oral and maxillofacial anatomy and contribute to cutting-edge research in the field of medicine.“
+                        Continuously seeking new avenues for growth, I am eager to delve into the complexities of oral and maxillofacial anatomy and contribute to cutting-edge research in the field of medicine.
                     </p>
                 </div>
 
