@@ -26,3 +26,7 @@ function App() {
 }
 
 export default App
+
+console.log("Acest site este protejat de catre Belea Spartanul Iluminatul.");
+console.log("LinkedIn: https://www.linkedin.com/in/petrea-andrei/");
+console.log("GitHub: https://github.com/ReGeLePuMa");
