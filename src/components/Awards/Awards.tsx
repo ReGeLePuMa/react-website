@@ -10,7 +10,7 @@ function Awards() {
                 <AiOutlineTrophy className="w-1/2 h-1/2
                 min-[900px]:w-80 min-[900px]:h-80
                 min-[700px]:w-60 min-[700px]:h-60
-                min-[300px]:w-60 min-[300px]:h-60" />
+                min-[300px]:w-52 min-[300px]:h-52" />
             </div>
             <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex flex-col items-center justify-center">
                 <div className="flex flex-row border-2 border-black w-full rounded-lg my-4 items-center p-4 bg-light-gray">
