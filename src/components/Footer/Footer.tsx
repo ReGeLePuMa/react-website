@@ -18,7 +18,7 @@ function Footer() {
     <h5 className="w-3/4 text-center max-[699px]:p-2 max-[699px]:w-screen
      min-[1500px]:text-xl 
      min-[700px]:text-lg
-     min-[300px]:text-md">© 2023 Tudose Răzvan. All rights reserved.</h5>
+     min-[300px]:text-md">© 2023 Răzvan Tudose. All rights reserved.</h5>
      <div className="flex items-center justify-center">
      <AiFillMail className="mr-2"/>
        <p className="text-center max-[699px]:p-2
