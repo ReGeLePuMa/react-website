@@ -7,7 +7,7 @@ function Research() {
         window.open(url, '_blank');
       };
     return (
-        <div id="research-section" className="w-screen h-screen bg-black flex flex-col items-center justify-center z-20">
+        <div id="research-section" className="w-screen h-screen bg-black flex flex-col items-center justify-center z-20 p-4">
             <div className="flex items-center justify-center w-4/5 p-4">
                 <h1 className="text-white m-5 text-4xl">Research</h1>
             </div>

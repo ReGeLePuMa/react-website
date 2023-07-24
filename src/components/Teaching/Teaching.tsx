@@ -20,7 +20,7 @@ function Teaching() {
     setCurrentSlide(currentSlide + 1);
   };
   return (
-    <div id="teaching-section" className="w-screen h-screen bg-black flex flex-col items-center justify-start">
+    <div id="teaching-section" className="w-screen h-screen bg-black flex flex-col items-center justify-start p-4">
       <div className="p-12 mb-12">
         <h1 className="text-4xl text-white font-bold my-auto mx-auto">Teaching</h1>
       </div>
