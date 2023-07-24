@@ -4,10 +4,10 @@ import Photo from "../../assets/umfcd.png"
 function About() {
     return (
         <div id="about-me" className="w-screen h-screen flex min-[700px]:flex-row min-[300px]:flex-col bg-white z-20 p-4">
-            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex items-center justify-center">
+            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex items-center justify-center p-4">
                 <img src={Photo} className="object-contain w-full h-full " alt="Your Photo" />
             </div>
-            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-full flex flex-col items-center justify-center">
+            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-full flex flex-col items-center justify-center p-4">
                 <h1 className="text-center font-bold p-4 text-4xl">About me</h1>
                 <p className="text-center
                 min-[1500px]:text-3xl

@@ -4,19 +4,18 @@ import { BiMedal } from "react-icons/bi"
 
 function Awards() {
     return (
-        <div id="awards-section" className="flex min-[700px]:flex-row min-[300px]:flex-col h-screen w-screen  bg-white">
+        <div id="awards-section" className="flex min-[700px]:flex-row min-[300px]:flex-col h-screen w-screen  bg-white p-4">
             <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto  flex flex-col items-center justify-center flex-1">
                 <h1 className="font-bold text-black text-4xl">Awards</h1>
                 <AiOutlineTrophy className="w-1/2 h-1/2
                 min-[900px]:w-80 min-[900px]:h-80
                 min-[700px]:w-60 min-[700px]:h-60
-                min-[300px]:w-60 min-[300px]:w-60
-                min-[150px]:w-60 min-[150px]:w-60" />
+                min-[300px]:w-60 min-[300px]:h-60" />
             </div>
             <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex flex-col items-center justify-center">
-                <div className="flex flex-row border-2 border-black w-4/5 rounded-lg my-4 items-center p-4 bg-light-gray">
+                <div className="flex flex-row border-2 border-black w-full rounded-lg my-4 items-center p-4 bg-light-gray">
                 <BiMedal className="w-16 h-16 mr-4"/>
-                <div>
+                <div className="w-full h-auto">
                     <h2 className="font-bold text-black
                      min-[900px]:text-2xl
                      min-[700px]:text-xl
@@ -31,9 +30,9 @@ function Awards() {
                     min-[300px]:text-sm">Oral Presentation - CBCT assessment of the greater palatine canal</p>
                 </div>
             </div>
-            <div className="flex border-2 flex-row border-black w-4/5 rounded-lg my-4 items-center p-4 bg-light-gray">
+            <div className="flex border-2 flex-row border-black w-full rounded-lg my-4 items-center p-4 bg-light-gray">
                     <BiMedal className="w-16 h-16 mr-4"/>
-                <div>
+                <div className="w-full h-auto">
                         <h2 className="font-bold text-black
                         min-[900px]:text-2xl
                         min-[700px]:text-xl
