@@ -15,20 +15,33 @@ import PosterImage from "../../assets/carousel/poster.jpg"
 
 function Teaching() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTouching, setIsTouching] = useState(false);
+
+  const handleTouchStart = () => {
+    setIsTouching(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsTouching(false);
+  };
+
 
   const handleVideoEnded = () => {
     setCurrentSlide(currentSlide + 1);
   };
+
   return (
     <div id="teaching-section" className="w-screen h-screen bg-black flex flex-col items-center justify-start">
       <div className="p-12 mb-12">
         <h1 className="text-4xl text-white font-bold my-auto mx-auto">Teaching</h1>
       </div>
-      <div className="w-full h-auto">
+      <div className="w-full h-auto" 
+       onTouchStart={handleTouchStart}
+       onTouchEnd={handleTouchEnd}>
         <Carousel
           showStatus={false}
           infiniteLoop={true}
-          autoPlay={true}
+          autoPlay={!isTouching}
           interval={3000}
           showThumbs={false}
           showArrows={false}

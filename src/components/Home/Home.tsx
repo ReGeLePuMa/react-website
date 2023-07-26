@@ -42,7 +42,7 @@ function Home() {
           <span className="ml-2 text-center
           min-[1500px]:text-3xl
           min-[700px]:text-2xl
-          min-[300px]:text-lg">“Carol Davila” University of Medicine and Pharmacy</span>
+          min-[300px]:text-lg">University of Medicine and Pharmacy “Carol Davila”</span>
         </div>
         <div className="flex items-center justify-center p-2">
           <BsFillPinFill className=" 
