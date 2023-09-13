@@ -13,14 +13,14 @@ function Awards() {
                 min-[400px]:w-[200px] min-[400px]:h-[200px]
                 min-[300px]:w-[175px] min-[300px]:h-[175px]" />
             </div>
-            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-auto flex flex-grow flex-col items-center justify-center">
-                <div className="flex flex-row border-2 border-black w-full h-auto rounded-lg mb-4 items-center p-4 bg-light-gray">
+            <div className="min-[700px]:w-1/2 min-[300px]:w-full h-full flex flex-col items-center justify-center">
+                <div className="flex flex-row border-2 border-black w-full h-1/4 rounded-lg mb-4 items-center p-2 bg-light-gray">
                 <BiMedal className="w-16 h-16 mr-4"/>
-                <div className="w-full h-auto">
+                <div className="w-full h-full flex flex-col items-start justify-center overflow-auto">
                     <h2 className="font-bold text-black
                      min-[900px]:text-2xl
                      min-[700px]:text-xl
-                     min-[300px]:text-lg">1st place Young Investigator's Award</h2>
+                     min-[300px]:text-md">1st place Young Investigator's Award</h2>
                     <p className="text-gray-700
                     min-[900px]:text-xl
                     min-[700px]:text-md
@@ -31,13 +31,13 @@ function Awards() {
                     min-[300px]:text-xs">Oral Presentation - CBCT assessment of the greater palatine canal</p>
                 </div>
             </div>
-            <div className="flex border-2 flex-row border-black w-full h-auto rounded-lg  items-center p-4 bg-light-gray">
+            <div className="flex border-2 flex-row border-black w-full h-1/4 rounded-lg mb-4 items-center p-2 bg-light-gray">
                     <BiMedal className="w-16 h-16 mr-4"/>
-                <div className="w-full h-auto">
+                <div className="w-full h-full flex flex-col items-start justify-center overflow-auto">
                         <h2 className="font-bold text-black
                         min-[900px]:text-2xl
                         min-[700px]:text-xl
-                        min-[300px]:text-lg">1st place - Scientific Presentations</h2>
+                        min-[300px]:text-md">1st place - Scientific Presentations</h2>
                         <p className="text-gray-700
                         min-[900px]:text-xl
                         min-[700px]:text-md
@@ -47,7 +47,24 @@ function Awards() {
                         min-[700px]:text-sm
                         min-[300px]:text-xs">Oral Presentation - The Zygomatic Implant: An anatomical view of the potential risks</p>
                 </div>
-            </div>    
+            </div> 
+            <div className="flex flex-row border-2 border-black w-full h-1/4 rounded-lg items-center p-2 bg-light-gray">
+                <BiMedal className="w-16 h-16 mr-4"/>
+                <div className="w-full h-full flex flex-col items-start justify-center overflow-auto">
+                    <h2 className="font-bold text-black
+                     min-[900px]:text-2xl
+                     min-[700px]:text-xl
+                     min-[300px]:text-md">Jasso Scholarship Awarded</h2>
+                    <p className="text-gray-700
+                    min-[900px]:text-xl
+                    min-[700px]:text-md
+                    min-[300px]:text-sm">Extended Student Exchange Program</p>
+                    <p className="text-gray-500 italic
+                    min-[900px]:text-md
+                    min-[700px]:text-sm
+                    min-[300px]:text-xs">Faculty of Dentistry, Niigata University, Japan</p>
+                </div>
+            </div>   
             </div>
         </div>
     )
