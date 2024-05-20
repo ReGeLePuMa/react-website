@@ -7,12 +7,11 @@ import Research from './components/Research/Research'
 import Awards from './components/Awards/Awards'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
 
   return (
-    <Router>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Home />
       <About />
@@ -21,7 +20,7 @@ function App() {
       <Teaching />
       <Contact />
       <Footer />
-    </Router>
+    </div>
   )
 }
 
