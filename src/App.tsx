@@ -36,6 +36,7 @@ type Conference = {
 
 const navItems = [
   { label: 'Profile', href: '#profile' },
+  { label: 'Memberships', href: '#memberships' },
   { label: 'Publications', href: '#publications' },
   { label: 'Awards', href: '#awards' },
   { label: 'Service', href: '#service' },
@@ -96,7 +97,7 @@ const awards: TimelineItem[] = [
   {
     title: 'Research Scholarship, Principal Investigator',
     date: '25 Oct 2024 – 25 Oct 2025',
-    meta: 'Johnson & Johnson · Intrinsic Anatomical Variations of the Petrous Bone · 12 months · EUR 200/month',
+    meta: 'Johnson & Johnson · Intrinsic Anatomical Variations of the Petrous Bone · 12-month research scholarship',
     description:
       'Two peer-reviewed publications produced under this funding in Annals of Anatomy: a CBCT analysis of geniculate ganglion fossa pneumatisation and dehiscence (DOI: 10.1016/j.aanat.2025.152402) and pneumatisation patterns surrounding the internal acoustic meatus (DOI: 10.1016/j.aanat.2025.152724).',
   },
@@ -137,6 +138,78 @@ const awards: TimelineItem[] = [
 ]
 
 const publications: Publication[] = [
+  {
+    year: '2026',
+    title: 'Prevalence of the high-riding vertebral artery depends on how it is defined: a meta-analysis with implications for C2 screw fixation',
+    authors: 'Tudose RC, Triantafyllou G, Piagkou M, Rusu MC',
+    journal: 'Anatomical Science International. Online ahead of print.',
+    doi: '10.1007/s12565-026-00954-6',
+    firstAuthor: true,
+  },
+  {
+    year: '2026',
+    title: 'From Golden Hour to Hospital Survivability: Treatment-System Degradation as the New Center of Gravity in Modern Military Medicine',
+    authors: 'Tudose RC, Rusu MC',
+    journal: 'Military Medicine. Advance article: usag282.',
+    doi: '10.1093/milmed/usag282',
+    firstAuthor: true,
+  },
+  {
+    year: '2026',
+    title: 'Ossification of the Mandible: A Regional Composite Model of Intramembranous, Parachondral, and Endochondral Mechanisms',
+    authors: 'Rusu MC, Stănescu AG, Tudose RC',
+    journal: 'Archives of Oral Biology. 189:106664.',
+    doi: '10.1016/j.archoralbio.2026.106664',
+  },
+  {
+    year: '2026',
+    title: 'Mastoid emissary vein, mastoid emissary foramen, and mastoid emissary canal: anatomy, variability, imaging, and clinical implications',
+    authors: 'Rusu MC, Tudose RC, Vrapciu AD',
+    journal: 'Surgical and Radiologic Anatomy. 48(1):145.',
+    doi: '10.1007/s00276-026-03912-z',
+  },
+  {
+    year: '2026',
+    title: 'Venous valves of the head and neck: a narrative review',
+    authors: 'Rusu MC, Bănică DA, Tudose RC',
+    journal: 'Surgical and Radiologic Anatomy. 48(1):137.',
+    doi: '10.1007/s00276-026-03910-1',
+  },
+  {
+    year: '2026',
+    title: 'Double vertebral artery-connected persisting proatlantal artery coexisting with a persisting carotid duct in an adult case: first evidence',
+    authors: 'Rusu MC, Jianu AM, Grigoriță LO, Tudose RC',
+    journal: 'Surgical and Radiologic Anatomy. 48(1):133.',
+    doi: '10.1007/s00276-026-03892-0',
+  },
+  {
+    year: '2026',
+    title: 'Innervation of the tubarial glands: A hypothesis-driven anatomical review',
+    authors: 'Rusu MC, Varga I, Tudose RC',
+    journal: 'The Anatomical Record. Online ahead of print.',
+    doi: '10.1002/ar.70228',
+  },
+  {
+    year: '2026',
+    title: 'Cone-Beam CT Morphometry of the Foramen Rotundum and Adjacent Skull-Base Landmarks: Associations With Sphenoid Sinus Pneumatization',
+    authors: 'Munteanu IM, Bănică DA, Tudose RC, Rusu MC',
+    journal: 'Journal of Craniofacial Surgery. Online ahead of print.',
+    doi: '10.1097/SCS.0000000000012896',
+  },
+  {
+    year: '2026',
+    title: 'The Big Nose Pattern at the Second Upper Molar — A Retrospective CBCT Study',
+    authors: 'Dandoczi CA, Rusu MC, Tudose RC, Tudosie MS',
+    journal: 'Dentistry Journal. 14(5):280.',
+    doi: '10.3390/dj14050280',
+  },
+  {
+    year: '2026',
+    title: 'Stromal Cells with Telocyte-Like Characteristics in the Ethmoidal Mucosa: Immunohistochemical Characterisation and Methodological Considerations',
+    authors: 'Rusu MC, Varga I, Tudose RC, Mehedinți MC',
+    journal: 'Bratislava Medical Journal. Online ahead of print.',
+    doi: '10.1007/s44411-026-00711-1',
+  },
   {
     year: '2026',
     title: 'The Buccal Fat Pad: An Accessible Craniofacial Stem Cell Niche with Emerging Regenerative Applications',
@@ -766,11 +839,11 @@ function App() {
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-                <p className="text-4xl font-black text-slate-950">60</p>
-                <p className="mt-1 text-sm font-semibold text-slate-600">peer-reviewed publications</p>
+                <p className="text-4xl font-black text-slate-950">68+</p>
+                <p className="mt-1 text-sm font-semibold text-slate-600">PubMed-indexed and peer-reviewed publications</p>
               </div>
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-                <p className="text-4xl font-black text-slate-950">11</p>
+                <p className="text-4xl font-black text-slate-950">13</p>
                 <p className="mt-1 text-sm font-semibold text-slate-600">first-author papers</p>
               </div>
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
@@ -803,6 +876,28 @@ function App() {
                 <p className="mt-3 text-2xl font-bold leading-snug">Clinically relevant anatomy through high-resolution imaging and rigorous synthesis.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="memberships" className="bg-slate-950 px-5 py-16 text-white md:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Professional memberships</p>
+            <h2 className="text-3xl font-black tracking-tight md:text-5xl">Society affiliations</h2>
+            <p className="mt-5 text-lg leading-8 text-slate-300">Professional affiliations in clinical anatomy and military medicine.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 transition hover:-translate-y-1 hover:border-cyan-300/50 hover:bg-white/[0.09]">
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">AMSUS</p>
+              <h3 className="mt-3 text-2xl font-bold text-white">The Society of Federal Health Professionals</h3>
+              <p className="mt-3 text-base leading-7 text-slate-300">Member</p>
+            </article>
+            <article className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 transition hover:-translate-y-1 hover:border-cyan-300/50 hover:bg-white/[0.09]">
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">BACA</p>
+              <h3 className="mt-3 text-2xl font-bold text-white">British Association of Clinical Anatomists</h3>
+              <p className="mt-3 text-base leading-7 text-slate-300">Member</p>
+            </article>
           </div>
         </div>
       </section>
@@ -865,13 +960,13 @@ function App() {
               <h2 className="text-3xl font-bold tracking-tight text-white md:text-5xl">Publications</h2>
             </div>
             <p className="text-lg leading-8 text-slate-300">
-              Sixty peer-reviewed publications since 2022, including eleven first-author papers. Bibliometric data retrieved from PubMed on 11 May 2026; Scopus, Web of Science, and Google Scholar profiles are available through the identifiers listed in the academic header. Up-to-date citation metrics are available on the linked profiles.
+              Sixty-eight PubMed-indexed publications, supplemented by selected additional peer-reviewed records not yet indexed in PubMed. The publication list is maintained from PubMed, Google Scholar, ORCID, Crossref/publisher records, and author profile records; up-to-date citation metrics are available through the linked Scopus, Web of Science, and Google Scholar profiles.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 text-slate-300">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Full list</p>
-            <p className="mt-3 text-base leading-7">Peer-reviewed publications are listed in reverse chronological order. First-author papers are flagged; DOI links open the publisher record.</p>
+            <p className="mt-3 text-base leading-7">Peer-reviewed publications are listed in reverse chronological order. First-author papers are flagged; DOI links open the publisher or DOI record. Non-PubMed-indexed records are retained when they are peer-reviewed and publicly traceable.</p>
           </div>
 
           <div className="mt-10 space-y-12">
@@ -968,7 +1063,7 @@ function App() {
               </article>
             ))}
           </div>
-          <div className="mt-8 grid gap-5 lg:grid-cols-2">
+          <div className="mt-8 max-w-3xl">
             <article className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-slate-950">Language skills</h3>
               <ul className="mt-4 space-y-2 text-base leading-7 text-slate-600">
@@ -976,10 +1071,6 @@ function App() {
                   <li key={language}>• {language}</li>
                 ))}
               </ul>
-            </article>
-            <article className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-slate-950">Professional membership</h3>
-              <p className="mt-4 text-base leading-7 text-slate-600">AMSUS — The Society of Federal Health Professionals, Member.</p>
             </article>
           </div>
         </div>
