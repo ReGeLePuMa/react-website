@@ -95,6 +95,12 @@ const cpd: TimelineItem[] = [
 
 const awards: TimelineItem[] = [
   {
+    title: 'President’s Prize Oral Presentation Winner',
+    date: '9 Jul 2026',
+    meta: 'British Association of Clinical Anatomists Summer Meeting · City St George’s, University of London',
+    description: 'Oral presentation: Overconfident at the Skull Base: Multimodal AI Error Phenotypes in CBCT Sphenoid-Sinus Surgical Anatomy.',
+  },
+  {
     title: 'Research Scholarship, Principal Investigator',
     date: '25 Oct 2024 – 25 Oct 2025',
     meta: 'Johnson & Johnson · Intrinsic Anatomical Variations of the Petrous Bone · 12-month research scholarship',
@@ -643,19 +649,50 @@ const publications: Publication[] = [
   },
 ]
 
-const peerReview = [
-  'Surgical and Radiologic Anatomy — 20 completed reviews',
-  'Annals of Anatomy — 11 completed reviews',
-  'Bratislava Medical Journal — 4 completed reviews',
-  'Ultrasound in Medicine and Biology — 3 completed reviews',
-  'BMC Medical Imaging — 2 completed reviews',
-  'The Anatomical Record — 1 completed review',
-  'Journal of Cardiothoracic Surgery — 1 completed review',
+const peerReview: string[] = [
+  'Surgical and Radiologic Anatomy',
+  'Annals of Anatomy',
+  'Bratislava Medical Journal',
+  'Ultrasound in Medicine and Biology',
+  'BMC Medical Imaging',
+  'The Anatomical Record',
+  'Journal of Cardiothoracic Surgery',
   'Neurosurgical Review',
   'World Journal of Surgical Oncology',
 ]
 
 const conferences: Conference[] = [
+  {
+    title: 'Anatomical Society Summer Meeting',
+    date: '15 Jul 2026 – 17 Jul 2026',
+    location: 'University of Bristol, Bristol, United Kingdom',
+    bullets: [
+      'Oral presentation: Structural capacity, not mechanical demand, governs fracture vulnerability in the human mandible.',
+    ],
+  },
+  {
+    title: 'British Association of Clinical Anatomists Summer Meeting',
+    date: '9 Jul 2026',
+    location: 'City St George’s, University of London, London, United Kingdom',
+    bullets: [
+      'Oral presentation: Overconfident at the Skull Base: Multimodal AI Error Phenotypes in CBCT Sphenoid-Sinus Surgical Anatomy. President’s Prize Oral Presentation Winner.',
+    ],
+  },
+  {
+    title: 'International Congress for Students, Young Doctors and Pharmacists “Marisiensis”, 30th Edition',
+    date: '20 May 2026 – 24 May 2026',
+    location: 'Târgu Mureș, Romania',
+    bullets: [
+      'Oral presentation, ENT section: Multiregional CBCT Assessment of Temporal Bone Pneumatization and Bony Coverage Across the Geniculate Ganglion Fossa, Jugular Bulb, and Internal Acoustic Meatus.',
+      'Oral presentation, Military Medicine section: From Golden Hour to Hospital Survivability: A Cross-Conflict Structured Review of How Modern Wars Reshaped Military Medicine.',
+      'Co-author presentation: Right Transverse Sinus Aplasia Identified on Three-Dimensional CT Angiography: An Archival Imaging Case Report.',
+      'Co-author presentation: Partial Anomalous Pulmonary Venous Connection of the Left Superior Pulmonary Vein to the Left Brachiocephalic Vein with Co-existing Pulmonary Venous Variations.',
+      'Co-author presentation: Mandibular Ossification Revisited: A Multi-Mechanism Framework Integrating Parachondral, Juxtaparachondral, Endochondral, and Transdifferentiation Pathways.',
+      'Co-author presentation: Pneumatization-Related Variants of the Internal Carotid Artery, Optic Nerve, Foramen Rotundum, and Vidian Canal: Inter-Structural Correlations and Combined Classification Patterns.',
+      'Co-author presentation: Pterygopalatine Ganglion Cell Death as an Underrecognized Mechanism in Dry Eye Syndrome: A Hypothesis with Special Attention to Diabetic Etiology.',
+      'Co-author presentation: Transverse Infrahyoid Anastomotic Vein Between the Internal Jugular Vein and the Contralateral Brachiocephalic Vein.',
+    ],
+  },
   {
     title: '27th Congress of the Balkan Military Medical Committee',
     date: '30 Mar 2026 – 2 Apr 2026',
@@ -756,7 +793,7 @@ const languageSkills = [
   'Romanian — mother tongue',
   'English — C1',
   'Italian — B2',
-  'Arabic — B2; used in teaching dental cohorts predominantly from Arabic-speaking countries',
+  'Arabic — B2',
 ]
 
 const teachingImages = [
@@ -765,11 +802,15 @@ const teachingImages = [
   { src: teachingThree, title: 'Greater palatine canal topography' },
 ]
 
-const groupedPublications = publications.reduce<Record<string, Publication[]>>((acc, publication) => {
+const publicationsChronological = [...publications].sort((a, b) => Number(b.year) - Number(a.year))
+
+const groupedPublications = publicationsChronological.reduce<Record<string, Publication[]>>((acc, publication) => {
   acc[publication.year] = acc[publication.year] || []
   acc[publication.year].push(publication)
   return acc
 }, {})
+
+const publicationYears = Object.keys(groupedPublications).sort((a, b) => Number(b) - Number(a))
 
 function SectionHeading({ eyebrow, title, text, align = 'center' }: { eyebrow: string; title: string; text?: string; align?: 'center' | 'left' }) {
   return (
@@ -907,7 +948,6 @@ function App() {
           <SectionHeading
             eyebrow="Research profile"
             title="A focused portfolio in anatomical variation and imaging-based morphometry"
-            text="The site now presents the work as a coherent academic profile rather than a simple student webpage. The structure highlights research direction, outputs, service, and technical competence."
           />
           <div className="grid gap-5 md:grid-cols-2">
             {researchAreas.map((area) => (
@@ -926,7 +966,6 @@ function App() {
             <SectionHeading
               eyebrow="Education and professional development"
               title="International exposure and continuing training"
-              text="Exchange, scientific writing, and AI-related professional development are integrated as supporting evidence for the research profile."
               align="left"
             />
           </div>
@@ -970,7 +1009,9 @@ function App() {
           </div>
 
           <div className="mt-10 space-y-12">
-            {Object.entries(groupedPublications).map(([year, items]) => (
+            {publicationYears.map((year) => {
+              const items = groupedPublications[year]
+              return (
               <section key={year}>
                 <div className="mb-5 flex items-center gap-4">
                   <h3 className="text-4xl font-black text-white">{year}</h3>
@@ -1004,7 +1045,8 @@ function App() {
                   ))}
                 </div>
               </section>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1014,7 +1056,6 @@ function App() {
           <SectionHeading
             eyebrow="Peer review and editorial service"
             title="Active reviewer for international journals"
-            text="The service section supports the profile as an emerging researcher already participating in the peer-review ecosystem."
           />
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {peerReview.map((review) => (
@@ -1081,7 +1122,7 @@ function App() {
           <SectionHeading
             eyebrow="Teaching and visualization"
             title="Imaging anatomy as an educational tool"
-            text="CBCT, 3D rendering, and annotated anatomical reconstructions give the site a distinctive visual identity while remaining academically serious."
+            text="CBCT, 3D rendering, and annotated anatomical reconstructions support anatomical teaching, surgical orientation, and publication-quality visualization."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {teachingImages.map((image) => (
@@ -1121,7 +1162,7 @@ function App() {
       </section>
 
       <footer className="border-t border-slate-200 bg-white px-5 py-8 text-center text-sm font-medium text-slate-500 md:px-8">
-        © 2026 Răzvan Costin Tudose. All rights reserved.
+        {`© ${new Date().getFullYear()} Răzvan Costin Tudose. All rights reserved.`}
       </footer>
     </main>
   )
